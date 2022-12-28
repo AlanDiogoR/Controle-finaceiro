@@ -1,7 +1,7 @@
-import { useContext, useEffect, useState } from 'react';
+import { useContext } from 'react';
 import { Header } from '../../components/Header';
 import { Summary } from '../../components/Summary';
-import { dateFormatter, priceFormatter } from '../../components/Summary/formater';
+import { dateFormatter, priceFormatter } from '../../utils/formater';
 import { TransactionContext } from '../../contexts/TransactionsContex';
 import { SearchForm } from '../components/SearchForm';
 
@@ -9,7 +9,7 @@ import { PriceHighLight, TransactionsContainer, TransactionsTable } from './styl
 
 
 export function Transactions() {
-  const { transactions } = useContext(TransactionContext)
+  const { transactions } = useContext(TransactionContext);
 
   return (
     <>
@@ -28,12 +28,12 @@ export function Transactions() {
                     <PriceHighLight variant={transaction.type}>
                       {transaction.type === 'outcome'  && '- '}
                       {priceFormatter.format(transaction.price)}
-                      </PriceHighLight>
+                    </PriceHighLight>
                   </td>
                   <td>{transaction.category}</td>
                   <td>{dateFormatter.format(new Date(transaction.createAt))}</td>
                 </tr>
-              )
+              );
             })}
           </tbody>
         </TransactionsTable>

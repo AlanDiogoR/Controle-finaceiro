@@ -1,5 +1,5 @@
 {
-  "transactions" : [
+  "transactions": [
     {
       "id": 1,
       "description": "Desenvolvimento de site",
@@ -23,6 +23,22 @@
       "category": "Educação",
       "price": 2600,
       "createAt": "2022-12-28 12:46"
+    },
+    {
+      "description": "WaiterAPP",
+      "price": 5000,
+      "category": "venda",
+      "type": "income",
+      "createAt": "2022-12-30T00:36:19.747Z",
+      "id": 4
+    },
+    {
+      "description": "Iorgute de banana",
+      "price": 8.99,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createAt": "2023-01-01T00:13:44.119Z",
+      "id": 5
     }
   ]
 }

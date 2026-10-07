@@ -22,7 +22,7 @@ Verificadas no código do commit `a05ce48`:
 - **Nova transação:** modal (Radix Dialog) com descrição, preço, categoria e tipo (entrada/saída via Radio Group), validado com Zod
 - **Listagem de transações** ordenada da mais recente para a mais antiga, com preço em reais e data formatados via `Intl`
 - **Busca de transações** por texto, com botão desabilitado enquanto a requisição está em andamento
-- **Estado global** em Context API (`TransactionsContext`), com criação otimista na lista após o `POST`
+- **Estado global** em Context API (`TransactionsContext`): a transação criada é inserida no topo da lista assim que o `POST` responde
 
 ## Como rodar (versão concluída)
 
